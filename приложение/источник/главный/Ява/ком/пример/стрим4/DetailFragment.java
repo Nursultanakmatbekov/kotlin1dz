@@ -15,7 +15,6 @@ import com.bumptech.glide.Glide;
 
 public class DetailFragment extends Fragment {
 
-
     private ImageView ivFullScreen;
     private OnePieceModel model;
     private TextView tvName, tvAge;
