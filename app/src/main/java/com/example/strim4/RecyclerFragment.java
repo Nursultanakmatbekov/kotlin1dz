@@ -61,7 +61,6 @@ public class RecyclerFragment extends Fragment implements OnItemClickListener {
                 .commit();
     }
 
-
     private void setUpListeners() {
         buttonAdd.setOnClickListener((View view) -> {
                 getParentFragmentManager().beginTransaction()
@@ -70,8 +69,9 @@ public class RecyclerFragment extends Fragment implements OnItemClickListener {
                         .commit();
         });
     }
+    
     private void onAdd() {
-        requireActivity().getSupportFragmentManager().setFragmentResultListener("backStack", getViewLifecycleOwner(), new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("bundle", getViewLifecycleOwner(), new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
                 if (requestKey.equals("backStack")) {
