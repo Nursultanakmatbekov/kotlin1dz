@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 public class OnePieceRepository {
     private final List<OnePieceModel> listOfCharacters = new ArrayList<>();
 
-
     public List<OnePieceModel> getListOfCharacters() {
         
         listOfCharacters.add(new OnePieceModel("https://tl.rulate.ru/i/book/21/5/27160.jpg", "Луффи", 17, "#FF00B6FF"));
