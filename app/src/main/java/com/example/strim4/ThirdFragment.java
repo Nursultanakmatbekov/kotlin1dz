@@ -43,10 +43,8 @@ public class ThirdFragment extends Fragment {
                 edAge.setError("error");
             } else if (edURL.isEmpty()) {
                 edUrl.setError("error");
-
             } else if (edNAME.isEmpty()) {
                 edName.setError("error");
-
             } else if (edAGE.isEmpty()) {
                 edAge.setError("error");
             } else {
